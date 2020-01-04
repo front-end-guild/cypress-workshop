@@ -9,7 +9,7 @@ So lets start preparing things!
 
 1.Clone the repository to your computer and install it using `npm install` under it.
 
-2.Once everything is finished, run `npx cypress open` ! Cypress application opens? you are good to go!  
+2.Once everything is finished, run `cypress open` under the angular application folder (cypress-workshop)! Cypress application opens? you are good to go!  
 
 ![](https://s3.amazonaws.com/assets.fullstack.io/n/20191024165127395_example_tests.png)
 
