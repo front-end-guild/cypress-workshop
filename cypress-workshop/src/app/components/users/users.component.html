@@ -1,0 +1,24 @@
+<div class="row">
+  <button class="btn btn-primary add-user-btn" (click)="addNewUser()">Add New User</button>
+</div>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Name</th>
+    <th scope="col">Age</th>
+    <th scope="col">Email</th>
+    <th scope="col">Loves Angular?</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let user of users; index as i">
+    <th scope="row">{{ i + 1 }}</th>
+    <td>{{user.name}}</td>
+    <td>{{user.age}}</td>
+    <td>{{user.email}}</td>
+    <td><i *ngIf="user.lovesAngular" class="fas fa-check-circle check-green-icon"></i><i *ngIf="!user.lovesAngular" class="fas fa-times-circle close-red-icon"></i></td>
+  </tr>
+  </tbody>
+</table>

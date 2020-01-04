@@ -1,0 +1,32 @@
+<div class="modal-header">
+  <h4 class="modal-title">Add New User</h4>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <div class="row content-alignment">
+    <div class="col-md-6">
+      <label>Name</label>
+      <input class="form-control" id="name" [(ngModel)]="user.name" type="text" placeholder="Name">
+    </div>
+    <div class="col-md-6">
+      <label>Age</label>
+      <input class="form-control" id="age" [(ngModel)]="user.age" type="number" placeholder="Age">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <label>Email</label>
+      <input class="form-control" id="email" [(ngModel)]="user.email" type="email" placeholder="Email">
+    </div>
+    <div class="col-md-6">
+      <label for="loves_angular">Loves Angular</label>
+      <input class="form-control" [(ngModel)]="user.lovesAngular" type="checkbox" id="loves_angular">
+    </div>
+  </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" (click)="activeModal.close('Close click')">Cancel</button>
+  <button type="button" class="btn btn-primary" [disabled]="!user.name.length || !user.age || !user.email.length" (click)="save()">Save User</button>
+</div>

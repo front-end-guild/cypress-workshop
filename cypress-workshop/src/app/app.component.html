@@ -1,0 +1,17 @@
+<div class="app-header">
+  <button type="button" class="btn btn-outline-primary menu-toggle" (click)="toggleNav()">
+    <i class="fas fa-bars"></i>
+  </button>
+  Cypress Automation Workshop
+</div>
+<div class="row app-content">
+  <div id="mySidenav" *ngIf="userService.userLoggedIn" class="{{menuIsOpened? 'col-md-2': 'closed-sidenav'}} sidenav">
+    <a [routerLink]="'users'"><i class="fas fa-user"></i><span *ngIf="menuIsOpened" class="menu-item-text">Users</span></a>
+    <a [routerLink]="'login'" (click)="userService.userLoggedIn = false"><i class="fas fa-sign-in-alt"></i><span
+      *ngIf="menuIsOpened" class="menu-item-text">Logout</span></a>
+  </div>
+
+  <div class="{{menuIsOpened? 'col-md-9': 'col-md-10'}}">
+    <router-outlet></router-outlet>
+  </div>
+</div>

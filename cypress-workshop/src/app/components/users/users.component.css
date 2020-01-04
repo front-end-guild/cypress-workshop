@@ -1,0 +1,18 @@
+.add-user-btn {
+  margin: 1em;
+  margin-left: 16%;
+  border-radius: 26px;
+  width: 102%;
+}
+
+.check-green-icon {
+  color: green;
+  font-size: 2em;
+  margin-left: 7%;
+}
+
+.close-red-icon {
+  color: red;
+  font-size: 2em;
+  margin-left: 7%;
+}
