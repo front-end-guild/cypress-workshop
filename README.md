@@ -11,7 +11,7 @@ So lets start preparing things!
 
 2.Once everything is finished, run `cypress open` under the angular application folder.
 
-3.Cypress desktop application opens (Like the picture below)? you are good to go!  
+3.Cypress desktop application opens (Like the picture below)? you are good to go! 🎉
 
 ![](https://s3.amazonaws.com/assets.fullstack.io/n/20191024165127395_example_tests.png)
 
