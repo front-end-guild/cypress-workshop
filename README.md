@@ -9,7 +9,7 @@ So lets start preparing things!
 
 1.Clone the repository to your computer and install it using `npm install` under it.
 
-2.Once everything is finished, run `cypress open` under the angular application folder.
+2.Once everything is finished, run `node_modules\\.bin\\cypress open` under the angular application folder.
 
 3.Cypress desktop application opens (Like the picture below)? you are good to go! 🎉
 
