@@ -11,6 +11,8 @@ So lets start preparing things!
 
 2.Once everything is finished, run `npm run node_modules\\.bin\\cypress open` under the angular application folder.
 
+(Mac users: node_modules/cypress/bin/cypress open)
+
 3.Cypress desktop application opens (Like the picture below)? you are good to go! 🎉
 
 ![](https://s3.amazonaws.com/assets.fullstack.io/n/20191024165127395_example_tests.png)
